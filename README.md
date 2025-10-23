@@ -16,7 +16,7 @@
 ---
 
 
-## 📌 **작품 소개 사진**
+## 🖼️ **작품 소개 사진**
 <div style="display: flex; justify-content: center; gap: 20px;">
 <img width="767" height="813" alt="목소리의형태 피그마" src="https://github.com/user-attachments/assets/d008c090-671d-42f9-808e-c8a0e214d9ee" />
 
@@ -38,7 +38,7 @@
 ---
 
 
-## ⭐ 주요 기능
+## 🔍 주요 기능
 
 
 ### 수어 번역
