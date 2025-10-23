@@ -1,6 +1,6 @@
 # 목소리의 형태
 
-> ** 장애인과 비 장애인간의 원활한 소통을 위해, 장애를 가진 전문직의 정확한 의사표현을 위해, 모든 언어는 존중받아야 하기에.
+> * 장애인과 비 장애인간의 원활한 소통을 위해, 장애를 가진 전문직의 정확한 의사표현을 위해, 모든 언어는 존중받아야 하기에.
 ---
 
 
@@ -16,11 +16,18 @@
 ---
 
 
+## 📌 **작품 소개 사진**
+<div style="display: flex; justify-content: center; gap: 20px;">
+<img width="767" height="813" alt="목소리의형태 피그마" src="https://github.com/user-attachments/assets/d008c090-671d-42f9-808e-c8a0e214d9ee" />
+
+
+---
+
+
 ## 🛠️ 주요 적용 기술 및 구조
 
 <div style="display: flex; justify-content: center; gap: 20px;">
   <img <img width="887" height="429" alt="스크린샷 2025-10-23 151130" src="https://github.com/user-attachments/assets/5cfe37c7-edb8-4446-978b-d8672f011096" />
-" />
 
 * 개발 환경 : Windows 11 (24H2, build Ver. 26100.3775), macOS (sequoia), Ubuntu (22.04 LTS)
 * 개발 도구 : Visual Studio Code, Mysql workbench
