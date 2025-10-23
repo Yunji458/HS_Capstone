@@ -1,0 +1,122 @@
+/* 전체 컨테이너 */
+.finger_container {
+  background-color: #fffff2;
+  text-align: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* 제목 */
+.finger_title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #3c4b3f;
+}
+
+/* 내용 전체 래퍼 */
+.finger_content-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+}
+
+/* 비디오 박스 */
+.finger_video-box {
+  width: 80%;
+  height: 40%;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finger_video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* 결과 박스 */
+.finger_result-box {
+  width: 80%;
+  height: auto;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: #f7fff6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 예측 결과 텍스트 */
+.finger_result-title {
+  font-size: 22px;
+  color: #3a5e4c;
+  margin-bottom: 10px;
+}
+
+.finger_prediction-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2f4f3e;
+}
+
+.finger_confidence-text {
+  font-size: 16px;
+  color: #4e6b5a;
+}
+
+/* 자모 추가 버튼 */
+.finger_button,
+.finger_merge-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #7fa68c;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.finger_button:hover,
+.finger_merge-button:hover {
+  background-color: #6b927a;
+}
+
+/* 자모 출력 영역 */
+.finger_text-area {
+  width: 90%;
+  height: 150px;
+  font-size: 1.2rem;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #a7c8b5;
+  resize: none;
+  background-color: #ffffff;
+}
+
+/* 최종 단어 */
+.final-word-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3a5e4c;
+  margin-top: 20px;
+}
+
+.final-word-text {
+  font-size: 24px;
+  color: #1a3e2a;
+}

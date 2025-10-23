@@ -1,0 +1,166 @@
+.scoreboard-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #11574A;
+}
+
+.scoreboard-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+/* --- 포디움 (1-3위) 섹션 --- */
+.podium-section {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  align-items: flex-end;   /* 아래쪽 정렬 (1위가 더 높아보이게) */
+  margin-bottom: 40px;
+  min-height: 250px; /* 포디움 높이 확보 */
+}
+
+.podium-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin: 0 10px; /* 아이템 간 간격 */
+  width: 150px; /* 각 아이템 너비 고정 */
+}
+
+/* 순서: 2위 - 1위 - 3위 */
+.podium-second {
+  order: 1; /* Flexbox 아이템 순서 */
+  background-color: #aec3b0; /* 은색 느낌 */
+}
+.podium-first {
+  order: 2; /* Flexbox 아이템 순서 */
+  transform: translateY(-20px) scale(1.1); /* 1위를 더 크고 위로 */
+  background-color: #E3eed4; /* fffacd 금색 느낌 */
+  border: 2px solid #6b9071;
+  z-index: 1; /* 다른 아이템 위에 보이도록 */
+}
+.podium-third {
+  order: 3; /* Flexbox 아이템 순서 */
+  background-color: #739670; /* 동색 느낌 */
+}
+
+.podium-rank-badge {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.podium-first .podium-rank-badge {
+  color: #11574A; /* 진한 금색 */
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.large-avatar {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.podium-user-id {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  word-break: break-all; /* 긴 아이디 줄바꿈 */
+}
+
+.podium-score {
+  font-size: 1em;
+  color: #555;
+}
+
+
+/* --- 4위 이하 리스트 섹션 --- */
+.others-list-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.others-list-section h3 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.others-list-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.score-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.score-item:last-child {
+  border-bottom: none;
+}
+
+.score-item:hover {
+  background-color: #f9f9f9;
+}
+
+.score-item .rank {
+  font-weight: bold;
+  color: #3498db;
+  min-width: 50px; /* 순위 표시 공간 확보 */
+  text-align: left;
+}
+
+.small-avatar {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.placeholder-avatar {
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.score-item .user-id {
+  flex-grow: 1; /* 남은 공간을 모두 차지 */
+  font-weight: 500;
+  margin-right: 15px;
+  word-break: break-all;
+}
+
+.score-item .score {
+  font-weight: bold;
+  color: #e74c3c;
+  min-width: 80px; /* 점수 표시 공간 확보 */
+  text-align: right;
+}

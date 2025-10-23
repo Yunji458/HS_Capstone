@@ -1,0 +1,78 @@
+/* 전체 앱 기본 스타일 */
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fffff2;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* 번역 페이지 레이아웃 */
+.translate-page {
+  display: flex;
+  flex: 1;
+}
+
+/* 사이드바 영역 */
+.sidebar {
+  width: 180px;
+  background-color: #f5fde9;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+}
+
+/* 사이드바 버튼 스타일 */
+.sidebar button {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 12px;
+  border: 1px solid #cfe0c3;
+  background-color: #f5fde9;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.sidebar button:hover {
+  background-color: #e6f3d8;
+  border-color: #bdd8a7;
+}
+
+.sidebar button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(189, 216, 167, 0.5);
+}
+
+.sidebar button.active {
+  background-color: #cfe9b8;
+  font-weight: bold;
+}
+
+/* 컨텐츠 영역 */
+.content {
+  flex: 1;
+  padding: 2rem;
+  text-align: left;
+}
+
+/* 기존 기본 로고 관련 스타일 제거 */
+.App-logo,
+.App-header,
+.App-link {
+  display: none;
+}
+
+/* 혹시 애니메이션이 필요하면 유지 */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

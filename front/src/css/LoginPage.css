@@ -1,0 +1,79 @@
+.Login_main {
+  width: 65%;
+  margin: 0 auto;
+  padding: 100px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #11574A;
+  /* flex-direction: column;
+  display: flex;
+  gap:30px; */
+}
+
+.Login_main h1,
+.Login_main h3,
+.Login_main label,
+.Login_main button {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  /* padding-top: 30px; */
+}
+.Log_In{
+font-size: 50px;
+font-weight: 600;
+}
+.Login{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.L_form_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가운데 정렬 */
+  padding-top: 120px;
+}
+
+.L_form_box input[type="text"],
+.L_form_box input[type="password"] {
+  width: 97%;
+  padding: 10px 12px; /* 상하 패딩 늘림, 좌우는 적당히 */
+  border: 1px solid #dcdcdc;
+  border-bottom: 1px solid #ddd; /* 하단 선만 표시 */
+  background-color: #fff;/* transparent; 입력 필드 배경 투명하게 */
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none; /* 포커스 시 기본 아웃라인 제거 */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom:10px;
+}
+
+.L_form_box button{
+  width: 96.5%;
+  padding: 10px 20px;
+  background-color: #fff; /* 이미지의 버튼 배경색 (흰색) */
+  color: #555; /* 이미지의 버튼 글자색 */
+  border: 1px solid #ccc; /* 이미지의 버튼 테두리 */
+  border-radius: 30px; /* 매우 둥근 모서리 */
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  margin-top: 40px;
+}
+
+.form_links {
+  display: flex;                 /* Flexbox 레이아웃 사용 */
+  justify-content: space-between; /* 자식 요소들을 양쪽 끝으로 분산 */
+  width: 97%;                   /* 부모 요소의 전체 너비를 차지하도록 설정 */
+  font-size: 0.9em;              /* 폰트 크기 조절 (선택 사항) */
+}
+
+/* a 태그에 대한 기본 스타일 (색상, 밑줄 등) */
+.form_links a {
+  color: #555;                 /* 링크 색상 (원하는 색으로 변경 가능) */
+  text-decoration: none;       /* 기본 밑줄 제거 */
+  cursor: pointer;             /* 마우스 커서를 포인터로 변경 */
+}

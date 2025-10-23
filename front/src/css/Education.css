@@ -1,0 +1,370 @@
+/* 전체 페이지 스타일 */
+.Edu_Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* 최소 화면 높이만큼 채우도록 */
+  box-sizing: border-box;
+  background-color: #fffff2;
+  padding: 30px;
+}
+
+/* 검색창 컨테이너 Wrapper */
+.Edu_Content_Wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+  gap:30px;
+}
+
+.Edu_Content_Wrap label{
+  font-size: 40px;
+  color: #11574A;
+  font-weight: 600;
+  padding: 60px 0 20px 0;
+}
+/* 검색창 영역 스타일 */
+.Edu_Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%; /* 검색창 전체 영역 너비 */
+  max-width: 700px; /* 최대 너비 제한 */
+}
+
+.searchbar {
+  padding: 10px 15px;
+  font-size: 16px;
+  flex-grow: 1; /* 남는 공간을 모두 차지하도록 */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-right: 15px; /* 검색 버튼과의 간격 */
+}
+
+.searchbar:focus {
+  border-color: #11574A;
+}
+
+.search-but {
+  background-color: #11574A;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px; /* searchbar와 동일하게 */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0; /* 버튼 크기 줄어들지 않도록 */
+}
+
+.search-but:hover {
+  background-color: rgb(96, 115, 98);
+}
+
+/* 테이블 스타일 */
+.Edu_TableChart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.chart {
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 카테고리 선택 테이블 */
+.category-table {
+  width: 60%; /* 너비 조정 */
+  max-width: 800px;
+}
+
+/* CategoryPicker.css 또는 App.css 등 */
+
+.category-picker {
+  display: flex;
+  justify-content: center; /* 버튼들을 중앙 정렬. 'flex-start', 'space-around' 등으로 변경 가능 */
+  align-items: center;
+  padding: 15px 0; /* 위아래 패딩 */
+  gap: 25px; /* 각 카테고리 버튼 사이의 간격 */
+  /* background-color: #FAF9F6; */ /* 이미지와 유사한 매우 연한 배경색 (선택 사항) */
+  font-family: Arial, sans-serif; /* 폰트 예시 */
+}
+
+.category-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 0; /* 버튼 내부 패딩 (점이 너무 붙지 않도록) */
+  transition: opacity 0.2s ease-in-out;
+}
+
+.category-button:hover {
+  opacity: 0.8; /* 마우스 오버 시 약간 투명하게 (선택 사항) */
+}
+
+.category-button .dot {
+  width: 10px; /* 점 크기 */
+  height: 10px; /* 점 크기 */
+  border-radius: 50%; /* 원형으로 만듦 */
+  background-color: #CCC8C0; /* 비활성 상태의 점 색상 (이미지의 연한 회베이지색) */
+  margin-right: 8px; /* 점과 라벨 사이 간격 */
+  transition: background-color 0.3s ease;
+}
+
+.category-button.active .dot {
+  background-color: #1E4D2B; /* 활성 상태의 점 색상 (이미지의 진한 녹색) */
+}
+
+.category-button .label {
+  font-size: 16px; /* 라벨 폰트 크기 */
+  color: #333333; /* 라벨 텍스트 색상 (진한 회색) */
+}
+/* 검색 결과 테이블 */
+.filtered-results-table {
+  width: 80%; /* 기존 너비 유지 또는 필요시 조정 */
+  max-width: 1000px;
+}
+
+
+.chart th, .chart td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.chart th {
+  background-color: #11574A;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chart th:hover {
+  background-color: #4f644c;
+}
+
+.chart td {
+  background-color: #ffffff;
+}
+
+tbody tr {
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+tbody tr:hover {
+  transform: scale(1.02);
+}
+
+tbody img {
+  border-radius: 10px;
+}
+
+/* Swiper 스타일 */
+.swiper-container {
+  position: relative;
+  width: 90%; /* 스와이퍼 컨테이너 너비 조정 */
+  max-width: 1400px; /* 최대 너비 설정 */
+  margin: 30px 0px; /* 상하 마진 증가 */
+}
+
+.education-swiper .swiper-slide { /* education-swiper 클래스 내부의 swiper-slide에만 적용 */
+  min-width: 0;
+  display: flex !important; /* Swiper 기본 스타일 오버라이드 */
+  justify-content: center;
+  align-items: center;
+}
+
+/* 정사각형 카드 스타일 */
+.square-card {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff; /* 중요: 카드 자체의 배경색 */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0.5, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  cursor: pointer;
+  perspective: 1000px; /* 3D 공간 설정: OK */
+ 
+  transition: transform 0.3s ease;
+}
+
+.square-card:hover {
+ transform: scale(1.05);
+}
+
+.card-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #11574A;
+  text-align: center;
+  padding: 5px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+ position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* 회전 시 뒷면 숨김: OK */
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* 내용 세로 정렬 */
+  font-size: 24px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.card-front {
+  background: #fff;
+}
+
+.card-back {
+  background: #eaf1eb; /* 뒷면 배경 약간 변경 */
+  transform: rotateY(180deg);
+}
+.card-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px; /* 크기 살짝 조정 */
+  height: 45px; /* 크기 살짝 조정 */
+  z-index: 10;
+  background-color: #9ebca1;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 18px; /* 아이콘/텍스트 크기 */
+}
+
+.prev-btn {
+  left: -60px; /* 버튼 위치 조정 (Swiper 너비에 따라) */
+}
+
+.next-btn {
+  right: -60px; /* 버튼 위치 조정 (Swiper 너비에 따라) */
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: #4f644c;
+}
+
+
+/* 선택된 카드 확대 표시 스타일 */
+.selected-card-overlay {
+  position: fixed; /* 화면 전체를 덮도록 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* 반투명 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* 다른 요소들 위에 표시 */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.expanded-card-container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  width: 90%;
+  max-width: 600px; /* 확대된 카드의 최대 너비 */
+  min-height: 450px; /* 일반 카드 2개 높이 + 여유분 (200*2 + 50) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; /* 내부 요소들 간 간격 */
+  position: relative;
+  box-sizing: border-box;
+}
+
+.close-expanded-card {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  transition: background-color 0.2s ease;
+}
+
+.close-expanded-card:hover {
+  background: #c0392b;
+}
+
+.expanded-card-name {
+  color: #11574A;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.expanded-card-img {
+  width: 100%;
+  max-width: 350px; /* 이미지 최대 너비 */
+  max-height: 220px; /* 이미지 최대 높이 설정 */
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+.expanded-card-video {
+  width: 100%;
+  max-width: 500px; /* 비디오 최대 너비 */
+  max-height: 280px; /* 비디오 최대 높이 설정 */
+  border-radius: 10px;
+  border: 1px solid #eee;
+}

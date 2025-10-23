@@ -1,0 +1,109 @@
+.header__inner {
+    background: #fffff2;
+    width: 100%;
+    padding: 3px;
+    border-bottom: #11574a49 2px solid;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__inner .header_logo {
+    width: 18%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header__inner .header_logo a {
+    align-items: center;
+    text-align: right;
+    text-decoration: none;
+    display: flex;
+    margin: 0 50px;
+  }
+  
+  .header__inner .header_logo a em {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: 500;
+  }
+  
+  .header__inner .header__nav {
+    width: 69%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .header__inner .header__nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .header__inner .header__nav li a {
+    color: #2E6840;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    margin: 0 30px;
+    position: relative;
+  }
+  
+  .header__inner .header__nav li a::before {
+    content: '';
+    width: calc(100% - 20px);
+    height: 2px;
+    background-color: #e2eafc;
+    position: absolute;
+    left: 10px;
+    bottom: 4px;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  
+  .header__inner .header__nav li a:hover::before {
+    transform: scaleX(1);
+  }
+  
+  /* 👇 active 메뉴 강조 */
+  .header__inner .header__nav li.active a {
+    background-color: #d2e8db;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #2b503c;
+    font-weight: bold;
+    box-shadow: inset 4px 0 0 #4f8063;
+  }
+  
+  .header__inner .header__nav li.active a::before {
+    display: none;
+  }
+  
+  .header__inner .header_login {
+    width: 13%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__inner .header_login a em {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: 200;
+  }
+  
+  .header__inner .header_login a::before {
+    content: '';
+    width: calc(100% - 20px);
+    height: 2px;
+    background-color: var(--color_body);
+    position: absolute;
+    left: 10px;
+    bottom: 4px;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  

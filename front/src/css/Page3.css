@@ -1,0 +1,33 @@
+.page3-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #11574A; /* Evergreen */
+    height: 100vh;
+    padding: 100px;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.first-box, .second-box ,.third-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.desc-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+}

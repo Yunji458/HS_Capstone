@@ -1,0 +1,98 @@
+.footer {
+    width: 100%;
+    background-color:  #212b2a;
+    color: #aaa; /* 텍스트 색상 흰색 */
+    padding: 20px 0; /* 상하 여백 */
+    
+  }
+  
+  /* 컨테이너 스타일 */
+  .footer__inner.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto; /* 가운데 정렬 */
+    gap: 15px;
+  }
+  
+  /* 로고와 설명 텍스트 스타일 */
+  .footer__text {
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .footer__text h5 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .footer__text p {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  /* 팀원 이름 섹션 스타일 */
+  .footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* 팀원 이름 사이의 간격 */
+    align-items: center;
+  }
+  
+  .footer__menu > div {
+    min-width: 150px;
+  }
+  
+  .footer__menu h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555; /* 밑줄 스타일 */
+    padding-bottom: 5px;
+  }
+  
+  .footer__menu span {
+    font-size: 0.9rem;
+    margin-right: 10px; /* 각 팀원 이름 사이 간격 */
+  }
+  
+  /* 하단 저작권 텍스트 */
+  .footer__right {
+    text-align: center;
+    flex-basis: 100%; /* 모바일에서 줄 바꿈 */
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #aaa; /* 저작권 텍스트 색상 */
+  }
+  
+  /* 링크 스타일 */
+  .footer__text a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer__text a:hover {
+    color: #ddd;
+  }
+  
+  /* 반응형 스타일 */
+  @media (max-width: 768px) {
+    .footer__inner.container {
+      flex-direction: column;
+      text-align: center; /* 모바일에서는 가운데 정렬 */
+    }
+  
+    .footer__menu {
+      flex-direction: column; /* 세로로 정렬 */
+      align-items: center;
+    }
+  
+    .footer__menu > div {
+      min-width: auto;
+    }
+  
+    .footer__right {
+      margin-top: 10px;
+    }
+  }
